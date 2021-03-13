@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Movie
+    {
+        public string Moviename { get; set; }
+        public int Movieid { get; set; }
+        public void SetValues(string Moviename, int Movieid)
+        {
+            this.Moviename = Moviename;
+            this.Movieid = Movieid;
+        }
+        public void GetValues()
+        {
+            Console.WriteLine(Moviename);
+            Console.WriteLine(Movieid);
+        }
+         static void Main(string[] args)
+        {
+            Movie mov = new Movie() { Movieid=3123,Moviename="f2efe"};
+            //mov.SetValues("fs", 23);
+            mov.GetValues();
+        }
+    }
+}
