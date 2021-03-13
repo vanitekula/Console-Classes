@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Employee
+    {
+        public int Empid { get; set; } //Instance members
+        public string Empname { get; set; }
+        public int Empsal { get; set; }
+        public void SetValues(int Empid, string Empname, int Empsal)// local values
+        {
+            this.Empid = Empid;
+            this.Empname = Empname;
+            this.Empsal = Empsal;
+        }
+        public void ShowValues()
+        {
+            Console.WriteLine(Empid);
+            Console.WriteLine(Empname);
+            Console.WriteLine(Empsal);
+        }
+         static void Main(string[] args)
+        {
+            Employee Emp = new Employee() { Empid = 213, Empname = "fff", Empsal = 231 };
+            //Emp.SetValues(123, "jdfgukd", 756);
+            Emp.ShowValues();
+        }
+    }
+}
