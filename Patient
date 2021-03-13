@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Patient
+    {
+        public int Patientid { get; set; }
+        public string Patientname { get; set; }
+        public int Patientfee { get; set; }
+        public void SetValues(int Patientid, string Patientname, int Patientfee)
+        {
+            this.Patientid = Patientid;
+            this.Patientname = Patientname;
+            this.Patientfee = Patientfee;
+        }
+        public void Getvalues()
+        {
+            Console.WriteLine(Patientid);
+            Console.WriteLine(Patientname);
+            Console.WriteLine(Patientfee);
+        }
+        static void Main(string[] args)
+        {
+            Patient pat = new Patient() { Patientid=23121,Patientname="verg",Patientfee=3321};
+            //pat.SetVlaues(212, "hfgdj", 2312);
+            pat.Getvalues();
+        }
+    }
+}
